@@ -1,0 +1,88 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #ffe6f2;
+    text-align: center;
+    overflow: hidden; /* Prevents scrolling */
+    height: 100vh; /* Ensures full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cupid container */
+.cupid-container {
+    position: absolute;
+    width: 90%; /* Takes up most of the screen's width but leaves margins */
+    max-width: 500px; /* Ensure it doesn't get too wide on larger screens */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff0f5; /* Light background to highlight the container */
+    border-radius: 20px;
+}
+
+/* Cupid image */
+#cupid {
+    width: 75px; /* Default size for desktop */
+    display: block;
+    margin: 0 auto;
+}
+
+/* The question text and buttons */
+.question {
+    margin-top: 20px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    font-size: 1rem; /* Smaller font size for mobile */
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+    width: 80%; /* Ensure buttons fit well on mobile */
+}
+
+button:hover {
+    background-color: #ff3385;
+}
+
+/* Message */
+#message {
+    display: none;
+    margin-top: 15px;
+    font-size: 1.5rem; /* Adjust message size for mobile */
+    color: #ff66b2;
+}
+
+/* Question text */
+h1 {
+    color: #ff3385;
+    font-size: 1.5rem; /* Smaller size for mobile */
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 768px) {
+    #cupid {
+        width: 75px; /* Adjust size for mobile */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    button {
+        font-size: 1rem; /* Adjust button text size for mobile */
+    }
+
+    #message {
+        font-size: 1.5rem; /* Adjust message size for mobile */
+    }
+}
