@@ -6,7 +6,7 @@ const message = document.getElementById('message');
 const questionContainer = document.querySelector('.question'); // Select the question container
 let moving = true;
 
-// Function to move the cupid container to a random position (within bounds)
+// Function to move the cupid container to a random position 
 function moveCupidContainer() {
     if (moving) {
         const containerWidth = cupidContainer.offsetWidth;
